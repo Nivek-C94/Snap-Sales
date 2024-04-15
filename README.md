@@ -1,22 +1,31 @@
 # Snap-Sales
 
-## Project Initialization
+## Overview
+Snap-Sales is a mobile application designed for sellers to efficiently manage their sales process by taking pictures, compiling price data, and generating product descriptions in real-time. This tool aims to enhance the efficiency and effectiveness of sales operations, particularly in dynamic environments such as outdoor markets or trade shows.
 
-### Repository Setup
-- The repository for Snap-Sales has been initialized with the necessary configurations and directories. This setup ensures a structured approach to development and deployment.
+## Features
+- **Product Photography**: Utilize the phone's camera to take high-quality pictures of products.
+- **Real-time Pricing**: Compile price data from various sources to provide competitive pricing information.
+- **Automatic Description Generation**: Use AI technologies to generate compelling product descriptions based on the images and data gathered.
 
-### Development Environment Setup
-- Development tools and environment are configured, including:
-  - Version control system
-  - Code editor settings
-  - Dependency management
-  - Testing frameworks
+## Technologies Used
+- Mobile development framework (to be determined)
+- AI and machine learning for processing images and text
+- Real-time data fetching and processing
+- Backend API for data management
 
-### File Structure Definition
-- The file structure for backend and frontend components has been defined and implemented, ensuring a clean separation of concerns and modularity for future enhancements.
+## Getting Started
+1. Clone the repository:
+   `git clone https://github.com/Nivek-C94/snap-sales.git`
+2. Navigate to the project directory:
+   `cd snap-sales`
+3. Install dependencies (details to be added):
+   `npm install` or equivalent
+4. Start the application:
+   `npm start` or equivalent
 
-### User Authentication Module Development
-- The user authentication module has been developed using secure practices, including JWT for secure token management. This ensures that user data is securely handled and that the application supports secure logins.
+## Contributions
+Contributions are welcome! Please read the contributing guide for how to contribute to the project.
 
-## Next Steps
-- Proceed with designing and implementing the UI components according to the project specifications.
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
