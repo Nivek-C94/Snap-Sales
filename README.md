@@ -15,5 +15,8 @@
 ### File Structure Definition
 - The file structure for backend and frontend components has been defined and implemented, ensuring a clean separation of concerns and modularity for future enhancements.
 
+### User Authentication Module Development
+- The user authentication module has been developed using secure practices, including JWT for secure token management. This ensures that user data is securely handled and that the application supports secure logins.
+
 ## Next Steps
-- Proceed with developing the user authentication module using secure practices.
+- Proceed with designing and implementing the UI components according to the project specifications.
