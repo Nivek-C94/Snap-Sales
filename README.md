@@ -1,12 +1,12 @@
 # Snap-Sales
 
 ## Overview
-**Snap-Sales** is an Android application designed for sellers to efficiently price products through an innovative and dynamic approach. By enabling users to continually snap pictures, the app utilizes advanced APIs to perform real-time image searches, gathering crucial product details like names, images, prices, and descriptions. This streamlined process allows sellers to compile and review product data effectively with a simple click on a 'done' button, enhancing productivity in environments like outdoor markets or trade shows.
+**Snap-Sales** is an Android application designed for sellers to efficiently price products through an innovative and dynamic approach. By enabling users to continually snap pictures, the app utilizes advanced APIs to perform real-time image searches, gathering crucial product details like names, images, prices, and descriptions from multiple online sources. This streamlined process allows sellers to compile and review product data effectively with a simple click on a 'done' button, enhancing productivity in environments like outdoor markets or trade shows.
 
 ## Key Features
 - **Continuous Product Photography**: Capture continuous images of products using the smartphone camera.
-- **Real-time Data Compilation**: Leverage powerful APIs to fetch and compile product data from various sources in real time.
-- **Efficient Data Review**: Review and manage all compiled product data conveniently through an intuitive user interface.
+- **Real-time Image Search**: Utilize images captured by the user to perform real-time searches, identifying similar products online.
+- **Comprehensive Product Data Retrieval**: Fetch detailed product information from multiple APIs based on the results of the image search, allowing for a thorough review of product details before pricing.
 
 ## Technologies Used
 - **Android Development**: Utilizing a modern Android development framework.
