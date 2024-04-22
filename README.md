@@ -13,6 +13,18 @@
 - **Artificial Intelligence**: Implementing AI and machine learning for real-time image processing and text generation.
 - **Data Management**: Robust backend API support for efficient data handling and storage.
 
+## Initial Setup
+1. Create a new Android project in Android Studio.
+2. Set the minimum SDK and add necessary permissions for camera and internet access in the AndroidManifest.xml:
+   ```xml
+   <uses-permission android:name="android.permission.CAMERA"/>
+   <uses-permission android:name="android.permission.INTERNET"/>
+   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+   ```
+3. Develop basic camera functionality using the Camera2 API. Implement a simple button to allow users to take pictures and setup a camera preview using a TextureView or SurfaceView.
+4. Integrate basic image processing with Google Vision API and fetch product information from UPCitemdb.
+5. Setup a basic UI to display camera preview and product information.
+
 ## Getting Started
 1. Clone the repository:
    `git clone https://github.com/Nivek-C94/snap-sales.git`
