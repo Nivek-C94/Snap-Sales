@@ -3,6 +3,7 @@ package com.snapsales.network;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import android.util.Log;
 
 public class RetrofitClient {
     private static final String BASE_URL = "https://api.upcitemdb.com/prod/trial/";
@@ -10,10 +11,14 @@ public class RetrofitClient {
 
     public static Retrofit getClient() {
         if (retrofit == null) {
-            retrofit = new Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
+            try {
+                retrofit = new Retrofit.Builder()
+                    .baseUrl(BASE_URL)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build();
+            } catch (Exception e) {
+                Log.e("RetrofitClient", "Error creating Retrofit instance: " + e.getMessage());
+            }
         }
         return retrofit;
     }
