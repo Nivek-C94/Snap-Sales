@@ -44,7 +44,34 @@ public class CameraService {
         }
     }
 
-    // Existing methods...
+    // Method to start continuous capture	
+    public void startContinuousCapture() {	
+        try {	
+            // Create a new capture request for continuous capture	
+            CaptureRequest.Builder captureBuilder = cameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW);	
+            captureBuilder.addTarget(previewSurface); // Assuming previewSurface is correctly set up	
+            captureBuilder.set(CaptureRequest.CONTROL_AF_MODE, CaptureRequest.CONTROL_AF_MODE_CONTINUOUS_PICTURE);	
+
+            // Start the camera preview session for continuous capture	
+            cameraDevice.createCaptureSession(Arrays.asList(previewSurface), new CameraCaptureSession.StateCallback() {	
+                @Override	
+                public void onConfigured(@NonNull CameraCaptureSession session) {	
+                    try {	
+                        session.setRepeatingRequest(captureBuilder.build(), null, null);	
+                    } catch (CameraAccessException e) {	
+                        Log.e("CameraService", "Failed to start continuous capture", e);	
+                    }	
+                }	
+
+                @Override	
+                public void onConfigureFailed(@NonNull CameraCaptureSession session) {	
+                    Log.e("CameraService", "Configuration change failed");	
+                }	
+            }, null);	
+        } catch (CameraAccessException e) {	
+            Log.e("CameraService", "Failed to access camera for continuous capture", e);	
+        }	
+    }
 
     // Open camera and set up the camera device
     private void openCamera() {
